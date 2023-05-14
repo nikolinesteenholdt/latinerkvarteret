@@ -1,0 +1,20 @@
+*{
+    overflow: hidden;
+    background-color: rgba(255, 248, 238, 1);
+    margin: 0;
+}
+
+#navbar {
+display: flex;
+justify-content: space-evenly;
+font-family: 'Montserrat';
+border-bottom-width: 2px;
+border-bottom-style: solid;
+border-bottom-color: rgba(121, 176, 234, 1);
+padding: 1%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
