@@ -25,6 +25,30 @@ nav a:hover {
     color:rgba(247, 190, 196, 1) ;
 }
 
+#mobilheader img {
+    padding: 3%;
+}
+
+#kryds{
+    padding: 3%;
+}
+
+#menupunkter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 3%;
+}
+
+#menupunkter a {
+    padding-top: 2%;
+    font-size: 20pt;
+}
+
+#menupunkter h2 {
+    font-size: 15pt;
+    padding-top: 2%;
+}
 #forside {
     display: flex;
     justify-content: space-evenly;
@@ -68,31 +92,50 @@ nav a:hover {
     margin-top: 2%;
     background-color:  rgba(121, 176, 234, 1);
     padding: 3%;
+    margin-bottom: 2%;
 }
 
-#mobilheader img {
-    padding: 3%;
+footer {
+    border-top: 2px;
+    border-top-color: rgba(247, 190, 196, 1);
 }
 
-#kryds{
-    padding: 3%;
+footer p{
+    line-height: 22px;
 }
 
-#menupunkter {
+footer div {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-left: 3%;
+    justify-content: space-around;
+    width: 100%;
 }
 
-#menupunkter a {
-    padding-top: 2%;
-    font-size: 20pt;
+footer div section{
+    height: 50%;
+    width: 30%;
+    padding: 2%;
 }
 
-#menupunkter h2 {
-    font-size: 15pt;
-    padding-top: 2%;
+footer h4 {
+margin-bottom: 2%;
+}
+
+#skrivmail {
+    width: 60%;
+    padding: 10px;
+    background-color:white;
+    border: none;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#tilmeld {
+    width: 30%;
+    padding: 10px;
+    background-color: rgba(247, 190, 196, 1);
+    margin-top:20px;
+    font-size: 15px;
 }
 
 /*Mobil*/
