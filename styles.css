@@ -7,13 +7,13 @@
 header {
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    border-bottom-color: rgba(121, 176, 234, 1);
+    border-bottom-color: rgba(247, 190, 196, 1);
     padding: 1%;
-}
-
-#navbar {
+    position: fixed;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 1;
 }
 
 a{
@@ -22,7 +22,7 @@ a{
 }
 
 nav a:hover {
-    color:rgba(121, 176, 234, 1) ;
+    color:rgba(247, 190, 196, 1) ;
 }
 
 #forside {
@@ -45,7 +45,7 @@ nav a:hover {
     display: flex;
     border-bottom-width: 1px;
     border-bottom-style:dashed;
-    border-bottom-color: rgba(121, 176, 234, 1);
+    border-bottom-color: rgba(247, 190, 196, 1);
     padding-top: 2%;
     padding-bottom: 2%;
 }
@@ -53,7 +53,7 @@ nav a:hover {
 .to_artikler section:first-child {
     border-top-width: 1px;
     border-top-style:dashed;
-    border-top-color: rgba(121, 176, 234, 1);
+    border-top-color: rgba(247, 190, 196, 1);
     margin-top: 10%;
 }
 
@@ -66,7 +66,7 @@ nav a:hover {
     display: flex;
     justify-content: space-evenly;
     margin-top: 2%;
-    background-color: rgba(247, 190, 196, 1);
+    background-color:  rgba(121, 176, 234, 1);
     padding: 3%;
 }
 
