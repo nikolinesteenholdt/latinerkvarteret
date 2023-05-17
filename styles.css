@@ -2,22 +2,29 @@
     background-color: rgba(255, 248, 238, 1);
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    margin-top:6%;
+    z-index: 0;
+    overflow-x: hidden;
 }
 
 header{
     position: fixed;
     width: 100%;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(247, 190, 196, 1);
+    top:0%;
     z-index: 1;
 }
 
 header nav{
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(247, 190, 196, 1);
-    padding: 1%;
     display: flex;
     justify-content: center;
+    padding: 1%;
 }
 
 header nav a{
@@ -45,6 +52,7 @@ header #mobilheader {
     position: fixed;
     width: 100%;
     z-index: 1;
+    top: 0%;
 }
 
 #kryds{
@@ -71,7 +79,6 @@ header #mobilheader {
 #forside {
     display: flex;
     justify-content: space-evenly;
-    /* padding-top: 3%; */
     position: relative;
     z-index: 0;
 }
@@ -83,6 +90,12 @@ header #mobilheader {
     padding-right: 20%;
     padding-bottom: 2%;
     padding-top: 1%;
+}
+
+#tekstboks h1{
+    font-family: 'Playfair Display';
+    color: rgba(121, 176, 234, 1);
+    letter-spacing: 3px;
 }
 
 .tre_artikler section {
@@ -101,9 +114,23 @@ header #mobilheader {
     margin-top: 10%;
 }
 
-.tre_artikler section img {
+.tre_artikler section div img{
+    width: 100%;
+}
+
+.tre_artikler section div:first-child {
     margin-left: 5%;
     padding-right: 5%;
+}
+
+.tre_artikler section div:last-child {
+    width: 70%;
+}
+
+.tre_artikler h2{
+    font-family: 'Playfair Display';
+    color: rgba(121, 176, 234, 1);
+    letter-spacing: 3px;
 }
 
 #fire_artikler {
@@ -113,6 +140,12 @@ header #mobilheader {
     background-color:rgba(121, 176, 234, 1);
     padding: 3%;
     margin-bottom: 1%;
+}
+
+#fire_artikler h2{
+    color:rgba(121, 176, 234, 1) ;
+    text-align: center;
+    font-family: 'Playfair';
 }
 
 .underside_startindhold {
@@ -129,6 +162,8 @@ header #mobilheader {
 .underside_tekstindhold h1{
     color: rgba(121, 176, 234, 1);
     padding: 1%;
+    font-family: 'Playfair Display';
+    letter-spacing: 3px;
 }
 
 .underside_artikler {
@@ -137,13 +172,18 @@ header #mobilheader {
 }
 
 .underside_artikler section{
-    max-width: 27%;
     padding: 4%;
 }
 
 .underside_artikler section h2{
     color: rgba(121, 176, 234, 1);
     padding: 1%;
+    font-family: 'Playfair Display';
+    letter-spacing: 3px;
+}
+
+.underside_artikler img{
+    width: 100%;
 }
 
 .kontaktinfo{
@@ -177,6 +217,8 @@ header #mobilheader {
 .kontaktinfo h4{
     background-color:rgba(247, 190, 196, 1);
     font-size: 15pt;
+    font-family: 'Playfair Display';
+    letter-spacing: 3px;
 }
 
 footer {
@@ -202,7 +244,9 @@ footer div section{
 }
 
 footer h4 {
-margin-bottom: 2%;
+    margin-bottom: 2%;
+    font-family: 'Playfair Display';
+    letter-spacing: 3px;
 }
 
 #skrivmail {
@@ -230,15 +274,55 @@ margin-bottom: 2%;
         display: none;
     }
 
+    #forside section:first-child{
+        display:none
+    }
+
+    #forside section{
+        width: 100%;
+    }
+
+    #forside section:last-child{
+        width: 100%;
+    }
+
+    .tre_artikler section img{
+        width: 50%;
+    }
+
+    .tre_artikler section div{
+        width: 50%;
+    }
+
+    .tre_artikler h2{
+        font-size: 12pt;
+    }
+
+    .tre_artikler p{
+        font-size: 10pt;
+    }
+
     #fire_artikler {
         display: flex;
         flex-wrap: wrap;
     }
 
+    #fire_artikler section{
+        width: 40%;
+    }
+
+    #fire_artikler img{
+        width: 100%;
+    }
+
     #fire_artikler :nth-child(3), :last-child{
         margin-top: 3%;
     }
-    
+
+    #fire_artikler h2{
+        font-size: 12pt;
+    }
+
     .underside_artikler{
         flex-direction: column;
     }
@@ -250,11 +334,36 @@ margin-bottom: 2%;
     .kontaktinfo {
         flex-direction: column;
     }
+
+    .kontaktinfo section iframe{
+        display: flex;
+        width: 90%;
+        margin: auto;
+    }
+
+    footer div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div section{
+        width: 90%;
+    }
+
+    footer p{
+        width: 90%;
+    }
+
 }
 
 /*Laptop*/
 @media screen and (min-width:820px){
     #mobilheader {
         display: none;
+    }
+
+    .underside_artikler section{
+        max-width: 27%;
+        padding: 4%;
     }
 }
