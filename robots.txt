@@ -1,0 +1,8 @@
+User agent: *
+Allow: /index.html
+Allow: /carre.html
+Allow: /smykbar.html
+Allow: /seramikku.html
+Allow: /guide.html
+Allow: /plakater.html
+Allow: /aedelsten.html
