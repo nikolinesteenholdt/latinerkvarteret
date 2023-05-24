@@ -27,9 +27,10 @@ header{
 header nav{
     display: flex;
     justify-content: center;
-    padding: 1%;
-    
+    padding-top: 1%;
     width: 40%;
+    padding-left: 20%;
+    padding-bottom: 1%;
 }
 
 header nav a{
@@ -52,8 +53,9 @@ nav a:hover {
 header img{
     display: flex;
     justify-content: center;
-    padding-top: 3%;
-    padding-left: 3%;
+    padding-top: 6%;
+    padding-bottom: 2%;
+    padding-left: 54%;
     width: 50%;
 }
 
@@ -128,7 +130,7 @@ header img{
     line-height: 140%;
 }
 
-#tre_artikler section {
+#tre_artikler section a {
     display: flex;
     border-bottom-width: 1px;
     border-bottom-style:dashed;
@@ -145,16 +147,16 @@ header img{
     margin-top: 20%;
 }
 
-#tre_artikler section div img{
+#tre_artikler section a div img{
     width: 100%;
 }
 
-#tre_artikler section div:first-child {
+#tre_artikler section a div:first-child {
     margin-left: 5%;
     padding-right: 5%;
 }
 
-#tre_artikler section div:last-child {
+#tre_artikler section a div:last-child {
     width: 70%;
 }
 
@@ -283,6 +285,7 @@ header img{
     font-size: 23pt;
     text-align: center;
     padding: 5%;
+    letter-spacing:3px ;
 }
 
 .artikel_opsætning h2{
