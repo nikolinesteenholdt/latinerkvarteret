@@ -365,6 +365,11 @@ footer h4 {
         display:none
     }
 
+    #forside section:nth-child(2){
+        display: flex;
+        justify-content: center;
+    }
+
     #forside section{
         width: 100%;
     }
