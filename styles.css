@@ -516,6 +516,12 @@ footer h4 {
         display: none;
     }
 
+    .artikel_opsætning img:first-child{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
     .kontaktinfo {
         flex-direction: column;
     }
@@ -636,8 +642,17 @@ footer h4 {
         margin-bottom: 15%;
     }
 
-    .artikel_opsætning img:first-child{
-        padding-left: 23%;
+    .artikel_opsætning div{
+        width: 100%;
+    }
+
+    .artikel_opsætning div img{
+        width: 25%;
+    }
+
+    .artikel_opsætning div img:first-child{
+        padding-left: 25%;
         padding-right: 2%;
     }
+
 }
