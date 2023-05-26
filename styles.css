@@ -381,6 +381,11 @@ footer h4 {
         width: 85%;
     }
 
+    #tekstboks h1{
+        font-size: 17pt;
+        padding-top: 1%;
+    }
+
     #tekstboks p{
         font-size: 10pt;
     }
